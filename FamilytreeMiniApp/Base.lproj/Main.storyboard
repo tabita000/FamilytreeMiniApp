@@ -1,24 +1,638 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RW3-pr-EIX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="9oX-Ru-hMm">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="9kr-ZV-7dz" customClass="ViewController" customModule="FamilytreeMiniApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LzU-Pk-9gv" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADE-ZO-M9w">
+                                <rect key="frame" x="110" y="81" width="173" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="30"/>
+                                <color key="tintColor" red="1" green="0.43991071780000002" blue="0.22014443189999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Family Tree"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYR-qs-6HI">
+                                <rect key="frame" x="2" y="223" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="grandfatherr" imagePadding="0.0">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="YV2-fk-ecX" kind="show" id="6z1-SM-DI6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="101-I5-n1s">
+                                <rect key="frame" x="69" y="383" width="24" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJm-d5-Z5G">
+                                <rect key="frame" x="99" y="223" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="DALL-E"/>
+                                <connections>
+                                    <segue destination="xZn-Wp-TlF" kind="show" id="2PP-fs-MME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ora-tB-6yY">
+                                <rect key="frame" x="289" y="223" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="grandmother"/>
+                                <connections>
+                                    <segue destination="j44-cY-JtK" kind="show" id="aRD-kX-eKT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSt-Fu-jMe">
+                                <rect key="frame" x="193" y="223" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="grandfather"/>
+                                <connections>
+                                    <segue destination="quJ-ih-tQ3" kind="show" id="PZV-cE-2ra"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpa-eV-ekH">
+                                <rect key="frame" x="2" y="575" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sis1"/>
+                                <connections>
+                                    <segue destination="u4e-b5-s7B" kind="show" id="6Kq-wC-vt9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSr-Xc-iTC">
+                                <rect key="frame" x="100" y="576" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sis2"/>
+                                <connections>
+                                    <segue destination="Wht-j4-ViD" kind="show" id="w3k-02-mi4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayG-dJ-vXG">
+                                <rect key="frame" x="194" y="576" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sis3"/>
+                                <connections>
+                                    <segue destination="bvU-3e-KYf" kind="show" id="IO2-Nt-qEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEV-A6-LpD">
+                                <rect key="frame" x="68" y="409" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="father"/>
+                                <connections>
+                                    <segue destination="2sR-JQ-AYI" kind="show" id="PMU-e8-IM2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dej-dp-QJ3">
+                                <rect key="frame" x="285" y="576" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="brother"/>
+                                <connections>
+                                    <segue destination="o0v-53-RZ6" kind="show" id="iHl-aE-Oqz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYn-qv-pyH">
+                                <rect key="frame" x="207" y="409" width="104" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="mother"/>
+                                <connections>
+                                    <segue destination="cGb-q5-eov" kind="show" id="ZbS-sO-eIZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="haT-eM-VIl"/>
+                        <color key="backgroundColor" red="0.066483425130208093" green="0.050953487910176336" blue="0.2022623180114117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gaB-9y-c6j"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CG3-WW-hcV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="664.8854961832061" y="104.92957746478874"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fmq-g3-vYM">
+            <objects>
+                <viewController id="YV2-fk-ecX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFr-Vc-Kxo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlq-4x-lQR">
+                                <rect key="frame" x="100" y="130" width="192" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58806260759999995" green="0.74005649689999997" blue="0.76871567959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Masih Sadiq">
+                                    <color key="titleColor" red="0.04603239495" green="0.035279636619999999" blue="0.1400442123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="Dqk-9Y-h2h"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Di6-kD-sns">
+                                <rect key="frame" x="88" y="307" width="217" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1926 Place Of Birth: Pakistan Children:Four                Spouse: Sakina Sadiq">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RUD-d8-Jch"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rhh-fb-4NK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaM-mP-oN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1365.6488549618321" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CfK-we-myn">
+            <objects>
+                <viewController id="xZn-Wp-TlF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Aa-AI-xAW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uj-Ej-21P">
+                                <rect key="frame" x="88" y="135" width="194" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58806260759999995" green="0.74005649689999997" blue="0.76871567959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sakina Sadiq">
+                                    <color key="titleColor" red="0.04603239495" green="0.035279636619999999" blue="0.1400442123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="r43-vU-CHv"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5w-sP-ZvT">
+                                <rect key="frame" x="65" y="322" width="217" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1932 Place Of Birth: Pakistan Children:Four                Spouse: Masih Sadiq">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i6T-gc-pS7"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZKb-dZ-HAe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJU-WU-Q63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2066.4122137404579" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aYY-98-p4T">
+            <objects>
+                <viewController id="quJ-ih-tQ3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lnY-Ii-dCG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vta-rn-ers">
+                                <rect key="frame" x="103" y="118" width="187" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58806260759999995" green="0.74005649689999997" blue="0.76871567959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Munir Gill">
+                                    <color key="titleColor" red="0.04603239495" green="0.035279636619999999" blue="0.1400442123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="nrs-8X-K91"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-1O-PHe">
+                                <rect key="frame" x="88" y="345" width="217" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1936 Place Of Birth: Pakistan Children:Four                Spouse: Nazira Begum  ">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L4e-md-jvz"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VkV-G1-NMo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHs-jj-1y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2809.9236641221373" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ErP-Tr-Fp0">
+            <objects>
+                <viewController id="j44-cY-JtK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Seg-fw-q7O">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8k-zW-cjH">
+                                <rect key="frame" x="94" y="122" width="205" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58806260759999995" green="0.74005649689999997" blue="0.76871567959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nazira Begum ">
+                                    <color key="titleColor" red="0.04603239495" green="0.035279636619999999" blue="0.1400442123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="NlO-Um-Dh3"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-Xf-g2A">
+                                <rect key="frame" x="94" y="342" width="217" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1932 Place Of Birth: Pakistan Children:Four                Spouse: Munir Gill">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3KP-EH-bkg"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BTz-Eu-nIJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKz-5b-Ljr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3518.320610687023" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XoJ-KN-GII">
+            <objects>
+                <viewController id="2sR-JQ-AYI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTG-WC-z4I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp3-Xf-lIE">
+                                <rect key="frame" x="97" y="130" width="198" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.51174014170000004" blue="0.22722676359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Albert Sadiq">
+                                    <color key="titleColor" red="0.04603239495" green="0.035279636619999999" blue="0.1400442123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="792-qy-zH0"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9k-Du-Gwn">
+                                <rect key="frame" x="88" y="344" width="217" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1960 Place Of Birth: Pakistan Children:Four                Spouse: Akhtar Sadiq">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SpU-ux-Vnk"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l3v-td-6g4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpK-o7-Dnm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4194.6564885496182" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kYT-ND-6A4">
+            <objects>
+                <viewController id="cGb-q5-eov" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1lk-d2-e8O">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3w7-jT-8e1">
+                                <rect key="frame" x="99" y="122" width="194" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.51174014170000004" blue="0.22722676359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Akhtar Sadiq">
+                                    <color key="titleColor" red="0.04603239495" green="0.035279636619999999" blue="0.1400442123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="leh-KB-AEk"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtK-BT-BTi">
+                                <rect key="frame" x="99" y="336" width="217" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1958 Place Of Birth: Pakistan Children:Four                Spouse: Albert Sadiq">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gzc-hU-ms1"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vQa-UT-DOr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHZ-eb-UjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4870.9923664122134" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1ER-y4-8Ch">
+            <objects>
+                <viewController id="u4e-b5-s7B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XFC-9j-bqG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIB-7e-5MK">
+                                <rect key="frame" x="108" y="123" width="177" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nida Sadiq">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="wD2-aR-PaT"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CNR-QS-Myh">
+                                <rect key="frame" x="88" y="365" width="217" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1988      Place Of Birth: Pakistan">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MWG-qs-k7o"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FtP-3s-4xw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EG7-ah-HZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5570.2290076335876" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U8f-JB-l6P">
+            <objects>
+                <viewController id="Wht-j4-ViD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mds-fu-QCV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVF-X7-RGR">
+                                <rect key="frame" x="104" y="126" width="184" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Tab Sadiq">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="kQu-aX-OXe"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7d-3t-ccU">
+                                <rect key="frame" x="88" y="365" width="217" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1991      Place Of Birth: Pakistan">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fF2-36-8fB"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IXU-qs-oa6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCl-LA-Mow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6310.6870229007627" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O2K-U2-LQX">
+            <objects>
+                <viewController id="bvU-3e-KYf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DWA-Jh-j95">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8P-yv-ULE">
+                                <rect key="frame" x="97" y="118" width="198" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Naina Sadiq">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="Xwu-w5-9jO"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNn-I0-NJD">
+                                <rect key="frame" x="88" y="356" width="217" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1994      Place Of Birth: Pakistan">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7YK-B0-IF3"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z6M-A1-IAI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGo-aj-Tab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7020.6106870229005" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M8p-zn-DOk">
+            <objects>
+                <viewController id="o0v-53-RZ6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h0T-GK-G3o">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjx-i0-qpm">
+                                <rect key="frame" x="102" y="124" width="188" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22840332723659371" green="0.23491647093953552" blue="0.76942896842956543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sean Sadiq">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RW3-pr-EIX" kind="show" id="Cy7-e2-zhZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWI-Bp-47M">
+                                <rect key="frame" x="88" y="365" width="217" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Date Of Birth: 1997      Place Of Birth: Pakistan">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sed-y3-fbD"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pch-LT-NLw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVZ-gZ-v9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7741.221374045801" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TwI-Y0-JJb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RW3-pr-EIX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="0Xf-6C-240"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Fo-G6-ocb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9kr-ZV-7dz" kind="relationship" relationship="rootViewController" id="g9f-YS-Q47"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vqa-AK-ZCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-261.83206106870227" y="104.92957746478874"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cy7-e2-zhZ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="DALL-E" width="80" height="80"/>
+        <image name="brother" width="80" height="80"/>
+        <image name="father" width="80" height="80"/>
+        <image name="grandfather" width="80" height="80"/>
+        <image name="grandfatherr" width="80" height="80"/>
+        <image name="grandmother" width="80" height="80"/>
+        <image name="mother" width="80" height="80"/>
+        <image name="sis1" width="80" height="80"/>
+        <image name="sis2" width="80" height="80"/>
+        <image name="sis3" width="80" height="80"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
